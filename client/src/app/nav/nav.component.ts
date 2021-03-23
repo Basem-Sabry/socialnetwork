@@ -13,6 +13,7 @@ export class NavComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.getCurrentUser();
   }
       login(){
       this.accountService.login(this.model).subscribe(res=>{
@@ -22,6 +23,13 @@ export class NavComponent implements OnInit {
 
 }
 logout(){
+  this.accountService.logout();
   this.loggedIn=false
+}
+getCurrentUser(){
+  this.accountService.currentUser$.subscribe(user=>{
+    //double !! is reverting the user type to boolean
+    this.loggedIn=!!user;
+  })
 }
 }

@@ -4,3 +4,11 @@
 .form-control{
     margin-right: 10px;
 }
+
+a.dropdown-toggle.text-light {
+    cursor: pointer;
+    text-decoration: none;
+} 
+.dropdown-item{
+    cursor: pointer;
+}
