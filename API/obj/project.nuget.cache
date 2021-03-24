@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/9GmTIpY3CvWj8okIzSEp1U+NZndmztR1mUQfF0+ZZlIPWnNAnjb9g5SAsBLDWU+lREZaL5e5fX3KauFC+omkA==",
+  "dgSpecHash": "Da9zQ1E/3cLkJ1zw0zIcQKND6j0kw4kwOIF+gX6es3O80XIPOgTdLxrFqA7j4FBYr9uLhHF/doYxQ08emz3yPQ==",
   "success": true,
-  "projectFilePath": "E:\\Demos\\AB\\API\\API.csproj",
+  "projectFilePath": "E:\\Demos\\Asp.net & Angular\\socialNetwork\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asmaa Ebed\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Asmaa Ebed\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
