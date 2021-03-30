@@ -12,7 +12,7 @@ import { AccountsService } from './_services/accounts.service';
 export class AppComponent implements OnInit {
   title = 'client';
   users :any;
-  constructor( private accountService:AccountsService){
+  constructor( private accountService:AccountsService, private http : HttpClient){
 
   }
   ngOnInit() {
@@ -21,6 +21,16 @@ export class AppComponent implements OnInit {
   }
   setCurrentUser(){
     const user : User =JSON.parse(localStorage.getItem('user')||'{}')
+  }
+
+
+
+  getUsers() {
+    this.http.get('https://localhost:5001/api/users').subscribe(response=>{
+      this.users = response;
+    },error =>{
+      console.log(error)
+    })
   }
 
 }

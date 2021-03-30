@@ -5732,11 +5732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Demos\\AB\\API\\API.csproj",
+      "projectUniqueName": "E:\\Demos\\Asp.net & Angular\\socialNetwork\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\Demos\\AB\\API\\API.csproj",
+      "projectPath": "E:\\Demos\\Asp.net & Angular\\socialNetwork\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Asmaa Ebed\\.nuget\\packages\\",
-      "outputPath": "E:\\Demos\\AB\\API\\obj\\",
+      "outputPath": "E:\\Demos\\Asp.net & Angular\\socialNetwork\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
