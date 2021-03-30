@@ -32,4 +32,10 @@ export class AccountsService {
     localStorage.removeItem('user');
     this.currentUserSource.next(null||JSON.parse(localStorage.getItem('user')||'{}'));
   }
+  register(model:any){
+    return this.http.post<User>(this.baseUrl+'account/register',model).pipe(
+      map((user) =>
+      {if(user){ localStorage.setItem("user",JSON.stringify(user));  this.currentUserSource.next(user) }})
+    )
+  }
 }
