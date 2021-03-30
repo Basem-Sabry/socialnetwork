@@ -1,6 +1,7 @@
 <div class="container mt-5">
     <div *ngIf="!registerMode" style="text-align: center;">
     <h1>Find Your Match</h1>
+    
     <p class="lead"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quis earum adipisci nulla pariatur ducimus praesentium provident culpa iure porro, illo nam maiores! Dolorum adipisci aperiam culpa veritatis excepturi quis.</p>
     <div class="text-center">
         <button class="btn btn-primary btn-lg mr-2 p-2" (click)="registerToggle()">Register</button>
@@ -9,7 +10,7 @@
     </div>
     <div class="container" *ngIf="registerMode">
         <div class="row justify-content-center">
-        <app-register [usersFromHomeComponent]="users" (cancelRegister)="cancelRegisterMode($event)"></app-register>
+        <app-register  (cancelRegister)="cancelRegisterMode($event)"></app-register>
         </div>
     </div>
-</div>1
+</div>
