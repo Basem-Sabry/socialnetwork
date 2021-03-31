@@ -2,19 +2,23 @@
     <div class="container">
       <a class="navbar-brand" routerLink="/">AB SocialNetwork</a>
  
-      <!-- *ngIf="accountService.currentUser$|async"  in the ul and div dropdown mt-2 --> 
 
-        <ul class="navbar-nav navLink mr-auto" *ngIf="accountService.currentUser$|async" >
+        <ul class="navbar-nav navLink mr-auto" >
+          <ng-container *ngIf="accountService.currentUser$|async"  >
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" routerLink="/members" routerLinkActive="active">Matches</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/lists" routerLinkActive="active">Lists</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " routerLink="/messages" routerLinkActive="active" >Messages</a>
+            </li>
+          </ng-container>
+
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" routerLink="/members" routerLinkActive="active">Matches</a>
+            <a class="nav-link " routerLink="/errors" routerLinkActive="active" >errors</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/lists" routerLinkActive="active">Lists</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " routerLink="/messages" routerLinkActive="active" >Messages</a>
-          </li>
-           
  
        
       
