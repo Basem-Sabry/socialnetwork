@@ -1,0 +1,19 @@
+<h4>
+    internal server error - refershing the page make error dissaper!
+</h4>
+<ng-container *ngIf="error" >
+<h5 class="text-danger">
+error : {{error.message}}
+</h5>
+<p class="font-weight-bold">note if you are seeing this then angular is probablty not to blame</p>
+<p>what to do next?</p>
+<ol>
+    <li>open the chrome dev tools</li>
+    <li>inspect the network tab</li>
+    <li>check tha the failing request</li>
+    <li>examine the request url make sure it is correct</li>
+    <li>re produce the error in postman  if we see the same response then the issue is not the angular</li>
+</ol>
+<p>following is the stack trace this is where your invistagion should start</p>
+<code class="mt-5" style="background-color: whitesmoke;">{{error.details}}</code>
+</ng-container>
